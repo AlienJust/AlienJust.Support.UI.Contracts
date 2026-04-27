@@ -5,10 +5,10 @@ namespace AlienJust.Support.UI.Contracts
     public interface IWindowSystemAsync
     {
         Task<string> ShowOpenFileDialogAsync(string dialogTitle, string filter);
-        
+
         Task<string[]> ShowOpenFilesDialogAsync(string dialogTitle, string filter);
 
-        Task<string> ShowSaveFileDialogAsync(string dialogTitle, string filter);
+        Task<string> ShowSaveFileDialogAsync(string dialogTitle, string filter, string filename = null);
 
         Task<BinaryChoise> ShowYesNoDialogAsync(string message, string caption);
 
